@@ -1,9 +1,9 @@
-package com.iav.vlvollylearning.rest;
+package com.iav.senamlantai.rest;
 
-import com.iav.vlvollylearning.model.DataMenuModel;
-import com.iav.vlvollylearning.model.ImageSliderModel;
-import com.iav.vlvollylearning.model.LatihanSoalModel;
-import com.iav.vlvollylearning.model.MenuModel;
+import com.iav.senamlantai.model.DataMenuModel;
+import com.iav.senamlantai.model.ImageSliderModel;
+import com.iav.senamlantai.model.LatihanSoalModel;
+import com.iav.senamlantai.model.MenuModel;
 
 import java.util.ArrayList;
 

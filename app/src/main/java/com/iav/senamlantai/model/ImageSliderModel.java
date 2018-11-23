@@ -1,4 +1,4 @@
-package com.iav.vlvollylearning.model;
+package com.iav.senamlantai.model;
 
 import com.google.gson.annotations.SerializedName;
 

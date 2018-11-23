@@ -1,4 +1,4 @@
-package com.iav.vlvollylearning.activity;
+package com.iav.senamlantai.activity;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -20,12 +20,12 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.RequestBuilder;
 import com.bumptech.glide.RequestManager;
 import com.bumptech.glide.request.RequestOptions;
+import com.iav.senamlantai.helper.Config;
+import com.iav.senamlantai.model.DataMenuModel;
 import com.iav.vlvollylearning.R;
-import com.iav.vlvollylearning.adapter.QuizAdapter;
-import com.iav.vlvollylearning.helper.Config;
-import com.iav.vlvollylearning.model.DataMenuModel;
-import com.iav.vlvollylearning.rest.ApiService;
-import com.iav.vlvollylearning.rest.Client;
+import com.iav.senamlantai.adapter.QuizAdapter;
+import com.iav.senamlantai.rest.ApiService;
+import com.iav.senamlantai.rest.Client;
 import com.pierfrancescosoffritti.youtubeplayer.player.AbstractYouTubePlayerListener;
 import com.pierfrancescosoffritti.youtubeplayer.player.YouTubePlayer;
 import com.pierfrancescosoffritti.youtubeplayer.player.YouTubePlayerInitListener;

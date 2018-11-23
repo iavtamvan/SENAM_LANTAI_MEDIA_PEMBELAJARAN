@@ -1,4 +1,4 @@
-package com.iav.vlvollylearning.activity;
+package com.iav.senamlantai.activity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -7,11 +7,11 @@ import android.support.v7.widget.RecyclerView;
 import android.widget.Toast;
 
 import com.iav.vlvollylearning.R;
-import com.iav.vlvollylearning.adapter.QuizAdapter;
-import com.iav.vlvollylearning.helper.Config;
-import com.iav.vlvollylearning.model.LatihanSoalModel;
-import com.iav.vlvollylearning.rest.ApiService;
-import com.iav.vlvollylearning.rest.Client;
+import com.iav.senamlantai.adapter.QuizAdapter;
+import com.iav.senamlantai.helper.Config;
+import com.iav.senamlantai.model.LatihanSoalModel;
+import com.iav.senamlantai.rest.ApiService;
+import com.iav.senamlantai.rest.Client;
 
 import java.util.ArrayList;
 

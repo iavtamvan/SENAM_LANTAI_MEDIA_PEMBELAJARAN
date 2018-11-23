@@ -1,4 +1,4 @@
-package com.iav.vlvollylearning.adapter;
+package com.iav.senamlantai.adapter;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -16,8 +16,7 @@ import com.bumptech.glide.RequestBuilder;
 import com.bumptech.glide.RequestManager;
 import com.bumptech.glide.request.RequestOptions;
 import com.iav.vlvollylearning.R;
-import com.iav.vlvollylearning.activity.DetailActivity;
-import com.iav.vlvollylearning.model.LatihanSoalModel;
+import com.iav.senamlantai.model.LatihanSoalModel;
 
 import java.util.ArrayList;
 

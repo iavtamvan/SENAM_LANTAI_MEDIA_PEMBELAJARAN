@@ -1,4 +1,4 @@
-package com.iav.vlvollylearning.adapter;
+package com.iav.senamlantai.adapter;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -15,11 +15,12 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.RequestBuilder;
 import com.bumptech.glide.RequestManager;
 import com.bumptech.glide.request.RequestOptions;
+import com.iav.senamlantai.activity.DataMenuActivity;
+import com.iav.senamlantai.activity.QuizActivity;
+import com.iav.senamlantai.helper.Config;
+import com.iav.senamlantai.model.MenuModel;
 import com.iav.vlvollylearning.R;
-import com.iav.vlvollylearning.activity.DataMenuActivity;
-import com.iav.vlvollylearning.activity.QuizActivity;
-import com.iav.vlvollylearning.helper.Config;
-import com.iav.vlvollylearning.model.MenuModel;
+
 import java.util.ArrayList;
 
 

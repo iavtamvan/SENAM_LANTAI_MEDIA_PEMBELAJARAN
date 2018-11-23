@@ -1,4 +1,4 @@
-package com.iav.vlvollylearning.rest;
+package com.iav.senamlantai.rest;
 
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
@@ -6,7 +6,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class Client {
-    private static String BASE_URL = "https://script.google.com/a/upgris.ac.id/macros/s/AKfycbw4t49JeVLFLfXrwyIpHHsxPFQN4KczhqQZQgQ0PlTf7KG-9eA/";
+    private static String BASE_URL = "https://script.google.com/macros/s/AKfycbyBCkMflFx97H7s5eev09Nh2f12rSDyQUvnZgWpnaM-OzfunwTV/";
     private static Retrofit getClient() {
         HttpLoggingInterceptor interceptor = new HttpLoggingInterceptor();
         interceptor.setLevel(HttpLoggingInterceptor.Level.BODY);

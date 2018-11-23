@@ -1,11 +1,11 @@
-package com.iav.vlvollylearning.activity;
+package com.iav.senamlantai.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 
-import com.iav.vlvollylearning.MainActivity;
+import com.iav.senamlantai.MainActivity;
 import com.iav.vlvollylearning.R;
 
 public class SplashScreenActivity extends AppCompatActivity {

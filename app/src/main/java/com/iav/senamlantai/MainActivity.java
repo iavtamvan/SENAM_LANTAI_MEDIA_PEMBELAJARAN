@@ -1,4 +1,4 @@
-package com.iav.vlvollylearning;
+package com.iav.senamlantai;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -13,12 +13,13 @@ import com.daimajia.slider.library.Indicators.PagerIndicator;
 import com.daimajia.slider.library.SliderLayout;
 import com.daimajia.slider.library.SliderTypes.BaseSliderView;
 import com.daimajia.slider.library.SliderTypes.TextSliderView;
-import com.iav.vlvollylearning.adapter.MenuAdapter;
-import com.iav.vlvollylearning.helper.Config;
-import com.iav.vlvollylearning.model.ImageSliderModel;
-import com.iav.vlvollylearning.model.MenuModel;
-import com.iav.vlvollylearning.rest.ApiService;
-import com.iav.vlvollylearning.rest.Client;
+import com.iav.senamlantai.adapter.MenuAdapter;
+import com.iav.senamlantai.helper.Config;
+import com.iav.senamlantai.model.ImageSliderModel;
+import com.iav.senamlantai.model.MenuModel;
+import com.iav.vlvollylearning.R;
+import com.iav.senamlantai.rest.ApiService;
+import com.iav.senamlantai.rest.Client;
 
 import java.util.ArrayList;
 import java.util.HashMap;
