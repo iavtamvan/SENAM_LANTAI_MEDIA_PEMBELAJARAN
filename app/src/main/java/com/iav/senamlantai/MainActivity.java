@@ -30,7 +30,6 @@ import retrofit2.Response;
 
 public class MainActivity extends AppCompatActivity {
 
-    private ImageView ivMenu;
     private RecyclerView rv;
     private ArrayList<MenuModel> menuModels;
     private MenuAdapter menuAdapter;
@@ -120,7 +119,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initView() {
-        ivMenu = findViewById(R.id.iv_menu);
         rv = findViewById(R.id.rv);
         mSliderSlider = findViewById(R.id.mSliderSlider);
         customIndicator = findViewById(R.id.custom_indicator);

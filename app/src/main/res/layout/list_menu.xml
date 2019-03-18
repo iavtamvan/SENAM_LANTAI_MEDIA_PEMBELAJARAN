@@ -24,7 +24,7 @@
                 android:id="@+id/iv_Menu"
                 android:layout_width="150dp"
                 android:layout_height="100dp"
-                android:src="@drawable/tenis_meja" />
+                android:src="@drawable/senamlantai" />
 
             <TextView
                 android:id="@+id/tv_menu"

@@ -1,9 +1,15 @@
 package com.iav.senamlantai.activity;
 
+import android.annotation.TargetApi;
+import android.app.Activity;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.webkit.WebResourceError;
+import android.webkit.WebResourceRequest;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.Toast;
 
 import com.iav.vlvollylearning.R;
@@ -25,6 +31,7 @@ public class QuizActivity extends AppCompatActivity {
     private RecyclerView rv;
     private ArrayList<LatihanSoalModel> latihanSoalModelArrayList;
     private QuizAdapter quizAdapter;
+    private WebView wv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +39,30 @@ public class QuizActivity extends AppCompatActivity {
         setContentView(R.layout.activity_quiz);
         latihanSoalModelArrayList = new ArrayList<>();
         initView();
-        getDtaLatihanSoal();
+//        getDtaLatihanSoal();
+        wv  = new WebView(this);
+
+        wv.getSettings().setJavaScriptEnabled(true); // enable javascript
+
+        final Activity activity = this;
+
+        wv.setWebViewClient(new WebViewClient() {
+            @SuppressWarnings("deprecation")
+            @Override
+            public void onReceivedError(WebView view, int errorCode, String description, String failingUrl) {
+                Toast.makeText(activity, description, Toast.LENGTH_SHORT).show();
+            }
+            @TargetApi(android.os.Build.VERSION_CODES.M)
+            @Override
+            public void onReceivedError(WebView view, WebResourceRequest req, WebResourceError rerr) {
+                // Redirect to deprecated method, so you can use it in all SDK versions
+                onReceivedError(view, rerr.getErrorCode(), rerr.getDescription().toString(), req.getUrl().toString());
+            }
+        });
+
+        wv .loadUrl("https://www.edmodo.com/?language=id");
+        setContentView(wv);
+
     }
 
     private void getDtaLatihanSoal() {
@@ -59,5 +89,6 @@ public class QuizActivity extends AppCompatActivity {
 
     private void initView() {
         rv = findViewById(R.id.rv);
+        wv = findViewById(R.id.wv);
     }
 }
