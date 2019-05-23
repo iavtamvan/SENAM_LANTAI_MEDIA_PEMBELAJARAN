@@ -13,6 +13,7 @@ import android.view.Window;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -20,12 +21,12 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.RequestBuilder;
 import com.bumptech.glide.RequestManager;
 import com.bumptech.glide.request.RequestOptions;
+import com.iav.senamlantai.adapter.QuizAdapter;
 import com.iav.senamlantai.helper.Config;
 import com.iav.senamlantai.model.DataMenuModel;
-import com.iav.vlvollylearning.R;
-import com.iav.senamlantai.adapter.QuizAdapter;
 import com.iav.senamlantai.rest.ApiService;
 import com.iav.senamlantai.rest.Client;
+import com.iav.vlvollylearning.R;
 import com.pierfrancescosoffritti.youtubeplayer.player.AbstractYouTubePlayerListener;
 import com.pierfrancescosoffritti.youtubeplayer.player.YouTubePlayer;
 import com.pierfrancescosoffritti.youtubeplayer.player.YouTubePlayerInitListener;
@@ -36,6 +37,7 @@ import java.util.ArrayList;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
+
 public class DataMenuActivity extends AppCompatActivity {
 
     private TextView tvMenuType;
@@ -47,6 +49,7 @@ public class DataMenuActivity extends AppCompatActivity {
 
     private LinearLayout div;
     private RequestManager requestManager = null;
+    private ProgressBar progressCircularMenu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,6 +59,7 @@ public class DataMenuActivity extends AppCompatActivity {
         nameMenu = getIntent().getStringExtra(Config.BUNDLE_NAME_MENU);
         tvMenuType.setText(nameMenu);
         dataMenuModels = new ArrayList<>();
+        progressCircularMenu.setVisibility(View.VISIBLE);
         getDataMenu();
 
     }
@@ -69,6 +73,8 @@ public class DataMenuActivity extends AppCompatActivity {
                     public void onResponse(Call<ArrayList<DataMenuModel>> call, Response<ArrayList<DataMenuModel>> response) {
                         if (response.isSuccessful()) {
                             dataMenuModels = response.body();
+                            progressCircularMenu.setVisibility(View.GONE);
+                            div.setVisibility(View.VISIBLE);
 //                            quizAdapter = new QuizAdapter(DataMenuActivity.this, dataMenuModels);
 //                            rv.setLayoutManager(new LinearLayoutManager(DataMenuActivity.this));
 //                            rv.setAdapter(quizAdapter);
@@ -177,6 +183,7 @@ public class DataMenuActivity extends AppCompatActivity {
         tvMenuType = findViewById(R.id.tv_menu_type);
         rv = findViewById(R.id.rv);
         div = findViewById(R.id.div);
+        progressCircularMenu = findViewById(R.id.progress_circular_menu);
     }
 
     @Override

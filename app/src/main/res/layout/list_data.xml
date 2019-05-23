@@ -70,6 +70,7 @@
                 android:background="@color/colorPrimary"
                 android:text=" Lihat Video "
                 android:gravity="center"
+                android:visibility="gone"
                 android:id="@+id/btn_lihat_video"
                 android:layout_gravity="center"
                 android:layout_marginTop="4dp"

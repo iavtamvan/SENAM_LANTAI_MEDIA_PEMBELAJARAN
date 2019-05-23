@@ -5,7 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
-import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.daimajia.slider.library.Animations.DescriptionAnimation;
@@ -17,9 +17,9 @@ import com.iav.senamlantai.adapter.MenuAdapter;
 import com.iav.senamlantai.helper.Config;
 import com.iav.senamlantai.model.ImageSliderModel;
 import com.iav.senamlantai.model.MenuModel;
-import com.iav.vlvollylearning.R;
 import com.iav.senamlantai.rest.ApiService;
 import com.iav.senamlantai.rest.Client;
+import com.iav.vlvollylearning.R;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
     private PagerIndicator customIndicator;
     private PagerIndicator customIndicator2;
     private ArrayList<ImageSliderModel> imageSliderModels;
+    private ProgressBar progressCircularMenuUtama;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
         initView();
         menuModels = new ArrayList<>();
         imageSliderModels = new ArrayList<>();
+        progressCircularMenuUtama.setVisibility(View.VISIBLE);
         getDataMenu();
         getSlider();
     }
@@ -102,6 +104,8 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onResponse(Call<ArrayList<MenuModel>> call, Response<ArrayList<MenuModel>> response) {
                         if (response.isSuccessful()) {
+                            progressCircularMenuUtama.setVisibility(View.GONE);
+                            rv.setVisibility(View.VISIBLE);
                             menuModels = response.body();
                             menuAdapter = new MenuAdapter(MainActivity.this, menuModels);
                             rv.setLayoutManager(new LinearLayoutManager(MainActivity.this));
@@ -123,5 +127,6 @@ public class MainActivity extends AppCompatActivity {
         mSliderSlider = findViewById(R.id.mSliderSlider);
         customIndicator = findViewById(R.id.custom_indicator);
         customIndicator2 = findViewById(R.id.custom_indicator2);
+        progressCircularMenuUtama = findViewById(R.id.progress_circular_menu_utama);
     }
 }

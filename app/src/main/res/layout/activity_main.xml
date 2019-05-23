@@ -43,11 +43,17 @@
         android:layout_centerHorizontal="true" />
 
 
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/progress_circular_menu_utama"
+        android:layout_margin="170dp"/>
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/rv"
         android:layout_weight="1"
+        android:visibility="gone"
         android:orientation="vertical">
     </android.support.v7.widget.RecyclerView>
 

@@ -1,5 +1,6 @@
 package com.iav.senamlantai.activity;
 
+import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
 import android.app.Activity;
 import android.os.Bundle;
@@ -33,6 +34,7 @@ public class QuizActivity extends AppCompatActivity {
     private QuizAdapter quizAdapter;
     private WebView wv;
 
+    @SuppressLint("SetJavaScriptEnabled")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -60,7 +62,7 @@ public class QuizActivity extends AppCompatActivity {
             }
         });
 
-        wv .loadUrl("https://www.edmodo.com/?language=id");
+        wv .loadUrl("https://docs.google.com/forms/d/e/1FAIpQLSfiSJv3c6w_HTCg_aRGWmsC_01yJ39Z93GbRm0Mo8KNlm2D4w/viewform");
         setContentView(wv);
 
     }

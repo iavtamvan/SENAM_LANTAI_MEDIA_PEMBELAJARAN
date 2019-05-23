@@ -51,7 +51,7 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="trimmed" value="true" />
+                                                <entry key="scalingPercent" value="60" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -61,7 +61,7 @@
                                   </option>
                                   <option name="values">
                                     <map>
-                                      <entry key="foregroundImage" value="D:\Downloads\MY GYMNASTIC.png" />
+                                      <entry key="foregroundImage" value="D:\Downloads\LOGO_BARU[1].png" />
                                     </map>
                                   </option>
                                 </PersistentState>
