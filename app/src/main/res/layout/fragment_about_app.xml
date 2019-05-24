@@ -118,7 +118,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="Irwansyah & Asep Kurnia. (2017). “Pendidikan Jasmani Olahraga dan 	Kesehatan 1”. Bandung: Grafindo Media Pratama."
+                                android:text="Irwansyah &amp; Asep Kurnia. (2017). “Pendidikan Jasmani Olahraga dan 	Kesehatan 1”. Bandung: Grafindo Media Pratama."
                                 android:layout_marginLeft="8dp"
                                 android:layout_marginRight="8dp"
                                 android:textColor="@android:color/black"/>
@@ -223,7 +223,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="Rindawan & Muhamad Satria Mulyajaya. (2016). “Hubungan Kekuatan Otot 	Lengan dan 	Kekuatan Otot Perut dengan Kemampuan Melakukan Sikap 	Lilin Pada Senam Lantai Siswa Kelas VIII SMPN 4 Praya Tengah 	Tahun 	Pelajaran 2015/2016”. JIME, Vol 2. No. 2 ISSN 2442-9511 	Oktober 2016."
+                                android:text="Rindawan &amp; Muhamad Satria Mulyajaya. (2016). “Hubungan Kekuatan Otot 	Lengan dan 	Kekuatan Otot Perut dengan Kemampuan Melakukan Sikap 	Lilin Pada Senam Lantai Siswa Kelas VIII SMPN 4 Praya Tengah 	Tahun 	Pelajaran 2015/2016”. JIME, Vol 2. No. 2 ISSN 2442-9511 	Oktober 2016."
                                 android:layout_marginLeft="8dp"
                                 android:layout_marginRight="8dp"
                                 android:textColor="@android:color/black"/>
@@ -382,7 +382,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="https://i0.wp.com/suka-suka.web.id/wp-content/uploads/2017/10/sejarah-senam.jpg?fit=550%2C354&ssl=1"
+                                android:text="https://i0.wp.com/suka-suka.web.id/wp-content/uploads/2017/10/sejarah-senam.jpg?fit=550%2C354&amp;ssl=1"
                                 android:layout_marginLeft="8dp"
                                 android:layout_marginRight="8dp"
                                 android:textColor="@android:color/black"/>
@@ -550,7 +550,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="https://i0.wp.com/suka-suka.web.id/wp-content/uploads/2017/10/sejarah-senam.jpg?fit=550%2C354&ssl=1"
+                                android:text="https://i0.wp.com/suka-suka.web.id/wp-content/uploads/2017/10/sejarah-senam.jpg?fit=550%2C354&amp;ssl=1"
                                 android:layout_marginLeft="8dp"
                                 android:layout_marginRight="8dp"
                                 android:textColor="@android:color/black"/>
