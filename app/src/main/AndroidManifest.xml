@@ -9,20 +9,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.iav.senamlantai.MainActivity">
-        </activity>
-
-        <activity android:name="com.iav.senamlantai.activity.DataMenuActivity"></activity>
-        <activity android:name="com.iav.senamlantai.activity.DetailActivity"
+        <activity android:name="com.iav.senamlantai.activity.AboutActivity"></activity>
+        <activity
+            android:name="com.iav.senamlantai.MainActivity"
             android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name="com.iav.senamlantai.activity.QuizActivity"></activity>
+        <activity android:name="com.iav.senamlantai.activity.DataMenuActivity" />
+        <activity
+            android:name="com.iav.senamlantai.activity.DetailActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.iav.senamlantai.activity.QuizActivity" />
         <activity android:name="com.iav.senamlantai.activity.SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
     </application>
 
