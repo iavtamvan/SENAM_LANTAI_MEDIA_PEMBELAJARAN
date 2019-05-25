@@ -32,7 +32,7 @@ public class AppAboutFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_about_app, container, false);
         initView(view);
 
-        Glide.with(getActivity()).load(R.drawable.index).into(ivLogo);
+        Glide.with(getActivity()).load(R.drawable.pustaka).into(ivLogo);
         return view;
     }
 

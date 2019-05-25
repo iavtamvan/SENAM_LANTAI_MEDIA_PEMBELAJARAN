@@ -24,7 +24,7 @@ public class AboutActivity extends AppCompatActivity {
                 getSupportFragmentManager(), FragmentPagerItems.with(this)
                 .add("Pencipta & Ide", IdeAboutFragment.class)
 //                .add("Pembuat", IavAboutFragment.class)
-                .add("Tentang Aplikasi", AppAboutFragment.class)
+                .add("Daftar Pustaka", AppAboutFragment.class)
                 .create());
 
         ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);

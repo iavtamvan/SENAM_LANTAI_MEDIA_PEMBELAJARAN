@@ -38,11 +38,11 @@
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="190dp"
+                            android:layout_width="150dp"
                             android:layout_height="100dp"
                             android:scaleType="fitXY"
-                            android:id="@+id/pustaka"
-                            android:src="@android:drawable/arrow_up_float" />
+                            android:id="@+id/ivLogo"
+                            android:src="@drawable/pustaka" />
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
             </LinearLayout>
