@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.iav.senamlantai.activity.AboutActivity"></activity>
+        <activity android:name="com.iav.senamlantai.activity.AboutActivity"
+            android:parentActivityName="com.iav.senamlantai.MainActivity"></activity>
         <activity
             android:name="com.iav.senamlantai.MainActivity"
             android:theme="@style/AppTheme.NoActionBar"></activity>
