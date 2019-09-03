@@ -22,7 +22,7 @@ public class AboutActivity extends AppCompatActivity {
 
         FragmentPagerItemAdapter adapter = new FragmentPagerItemAdapter(
                 getSupportFragmentManager(), FragmentPagerItems.with(this)
-//                .add("Pencipta & Ide", IdeAboutFragment.class)
+                .add("Pencipta & Ide", IdeAboutFragment.class)
 //                .add("Pembuat", IavAboutFragment.class)
                 .add("Daftar Pustaka", AppAboutFragment.class)
                 .create());
