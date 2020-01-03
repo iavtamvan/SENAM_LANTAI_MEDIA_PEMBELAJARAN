@@ -9,11 +9,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.iav.senamlantai.activity.AboutActivity"
-            android:parentActivityName="com.iav.senamlantai.MainActivity"></activity>
+        <activity android:name="com.iav.senamlantai.activity.RegisterActivity"></activity>
+        <activity android:name="com.iav.senamlantai.activity.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.iav.senamlantai.activity.AboutActivity"
+            android:parentActivityName="com.iav.senamlantai.MainActivity" />
         <activity
             android:name="com.iav.senamlantai.MainActivity"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name="com.iav.senamlantai.activity.DataMenuActivity" />
         <activity
             android:name="com.iav.senamlantai.activity.DetailActivity"
