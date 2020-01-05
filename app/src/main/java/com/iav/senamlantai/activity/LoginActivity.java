@@ -36,6 +36,7 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        getSupportActionBar().hide();
         initView();
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
@@ -56,6 +57,9 @@ public class LoginActivity extends AppCompatActivity {
                                             loading.dismiss();
                                             finishAffinity();
                                             startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                                        } else {
+                                            loading.dismiss();
+                                            Toast.makeText(LoginActivity.this, "Login Gagal, cek username/password", Toast.LENGTH_SHORT).show();
                                         }
                                     }
 

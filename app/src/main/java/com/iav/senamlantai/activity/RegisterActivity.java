@@ -40,7 +40,7 @@ public class RegisterActivity extends AppCompatActivity {
             public void onClick(View view) {
                 final ProgressDialog loading = ProgressDialog.show(RegisterActivity.this, "Loading", "Validasi data...", false, false);
                 ApiService apiService = Client.getInstanceRetrofit();
-                apiService.postRegister("read","akun", edtUsername.getText().toString().trim(), edtPassword.getText().toString().trim())
+                apiService.postRegister("insertDataRegister","akun", edtUsername.getText().toString().trim(), edtPassword.getText().toString().trim())
                         .enqueue(new Callback<ResponseBody>() {
                             @Override
                             public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {

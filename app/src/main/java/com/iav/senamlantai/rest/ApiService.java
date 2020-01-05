@@ -10,6 +10,7 @@ import java.util.ArrayList;
 
 import okhttp3.ResponseBody;
 import retrofit2.Call;
+import retrofit2.http.Field;
 import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.GET;
 import retrofit2.http.POST;
@@ -37,10 +38,10 @@ public interface ApiService {
                                         @Query("sheetName") String sheetName);
     @FormUrlEncoded
     @POST("exec")
-    Call<ResponseBody> postRegister(@Query("action") String action,
-                                      @Query("sheetName") String sheetName,
-                                      @Query("username") String username,
-                                      @Query("password") String password
+    Call<ResponseBody> postRegister(@Field("action") String action,
+                                      @Field("sheetName") String sheetName,
+                                      @Field("username") String username,
+                                      @Field("password") String password
     );
 
 
