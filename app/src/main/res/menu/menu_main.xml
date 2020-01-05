@@ -8,6 +8,7 @@
         android:id="@+id/setting"
         android:orderInCategory="300"
         android:title="User"
+        android:visible="false"
         android:icon="@android:drawable/ic_dialog_info"
         app:showAsAction="ifRoom"></item>
 </menu>
